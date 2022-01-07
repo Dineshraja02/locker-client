@@ -1,0 +1,187 @@
+.dashboard{
+    display: flex;
+    }
+    .sidebar{
+        flex:2.5;
+    }
+    
+    .lockers{
+        flex:7.5;
+        background-color: #ECECEC;
+    }
+    
+    .lockersContainer{
+        background-color: white;
+        height: 95vh;
+        margin:20px;
+        border-radius: 15px;
+    }
+    
+    .lockershead{
+        height:15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:25px;
+    }
+    
+     #lockershead{
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .search_Input{
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        margin-left: 8%;
+    }
+    
+    .search_Inputfields{
+        margin-right: 40px;
+        margin-top: 30px;
+        border: none;
+        background-color: #F5F5F5;
+        padding: 15px;
+        border-radius: 10px;
+        width: 12rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 15px;
+        position: relative;
+    }
+    
+    .search_Icon{  
+        color: black;
+        position: absolute;
+        
+    }
+    
+    .iconify{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+
+    .lockerInfo{
+        flex:2; 
+        background-color: #C4C4C4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .lockerInfo_top{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .lockerInfo_top>h6{
+        border-bottom: 1px solid black;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .lockertop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lockerImg{
+        width: 1.8rem;
+        height: 1.8rem;
+        color: green;
+        margin: 20px;
+    }
+    
+    .lockerInfo_details{
+       height: 70%;
+       width: 12.9rem;
+       background-color: F1F1F1;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       margin-top:20px ;
+       align-items: center;
+    }
+    
+    .profileImg{
+        width: 100px;
+        height: 110px;
+        margin-top: -55px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .lockerInfo_detailsdiv{
+     height: 40px;
+     width: 100%;
+     margin: 40px 10px 10px 10px;
+     font-size: 25px;
+    
+    }
+    
+    .lockerInfo_detailsdiv>h6{
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    
+    .lockerInfo_detailsdiv>p{
+        border-bottom: 1px solid black;
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    .userlist-Table{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    
+    .emi_Table{
+        width: 80%;
+        margin: 20px;
+    }
+    
+    .table_Header{
+        color: black;
+        
+    }
+    
+    .table_Header >th{
+        border:none
+    }
+    
+    .table-Content>th{
+        border: 1px solid black;
+    }
+    
+    .reportsForm{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reportsInput{
+        margin-bottom:30px ;
+        padding: 8px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    
+    .input_Button{
+        padding: 10px;
+        border: none;
+        background-color: #303030 ;
+        color: #F5F5F5;
+        font-weight: bold;
+    }
