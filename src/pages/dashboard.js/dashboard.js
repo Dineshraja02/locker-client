@@ -32,12 +32,15 @@ const Dashboard = () => {
                     </div>
                     <div className='lockerBox_Container'>
                     {Dashboarddata.map((values,key)=>{
-                     return <div key={key} className='lockerBox'>
-                    <Icon icon="fa-solid:lock" />
+                     return <div key={key}  className='lockerBox'>
+                    <Icon icon="fa-solid:lock" id={values.status} />
                     <div>
                         <h5>{values.name}</h5>
                         <p>{values.status}</p>
-                        <button type='button' onClick={()=>handleUnlock(values)}>lock</button>
+                       {values.status==="locked" ? 
+                       <button type='button' 
+                       className='unlockButton'
+                       onClick={()=>handleUnlock(values)}>unlock</button>:""}
                     </div>
                     </div>
                     })}

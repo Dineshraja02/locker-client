@@ -2,32 +2,32 @@ export const Dashboarddata = [
     {
         name:"Locker 1",
         topic:"/locker1/ssd1406",
-        status:""
+        status:"locked"
     },
     {
         name:"Locker 2",
         topic:"/locker2/ssd1406",
-        status:""
+        status:"locked"
     },
     {
         name:"Locker 3",
         topic:"/locker3/ssd1406",
-        status:""
+        status:"reserved"
     },
     {
         name:"Locker 4",
         topic:"/locker4/ssd1406",
-        status:""
+        status:"reserved"
     },
     {
         name:"Locker 5",
         topic:"/locker5/ssd1406",
-        status:""
+        status:"available"
     },
     {
         name:"Locker 6",
         topic:"/locker6/ssd1406",
-        status:""
+        status:"available"
     },
     {
         name:"Locker 7",
