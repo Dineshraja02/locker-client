@@ -1,24 +1,29 @@
 .dashboard{
 display: flex;
+max-height: 100vh;
 }
-.sidebar{
+.dashboard_sidebar{
     flex:2.5;
+    max-height: 100vh;
 }
 
-.lockers{
+.dashboard_lockers{
     flex:7.5;
     background-color: #ECECEC;
+    overflow-y: scroll;
+    position: sticky
 }
 
-.lockersContainer{
+.dashboard_lockersContainer{
     background-color: white;
-    height:fit-content;
+    height:fit-content !important;
     min-height: 95vh;
     margin:20px;
     border-radius: 15px;
+   
 }
 
-.lockershead{
+.dashboard_lockershead{
     height:15%;
     display: flex;
     align-items: center;
@@ -26,21 +31,21 @@ display: flex;
     margin:25px;
 }
 
- #lockershead{
+ #dashboard_lockershead{
     margin-left: 40px;
     margin-top: 30px;
     font-size: 25px;
     font-weight: 500;
 }
 
-.search_Input{
+.dashboard_search_Input{
     width: 100%;
     position: relative;
     justify-content: center;
     margin-left: 8%;
 }
 
-.search_Inputfields{
+.dashboard_search_Inputfields{
     margin-right: 40px;
     margin-top: 30px;
     border: none;
@@ -55,7 +60,7 @@ display: flex;
     position: relative;
 }
 
-.search_Icon{  
+.dashboard_search_Icon{  
     color: black;
     position: absolute;
     
@@ -66,32 +71,53 @@ display: flex;
     height: 1.3rem;
 }
 
-.lockerBox_Container{
+.dashboard_lockerBox_Container{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
 }
 
-.lockerBox{
+.dashboard_lockerBox{
     width: 150px;
     height: 100px;
     background-color:#F5F5F5 ;
-    margin: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   
 }
 
-.lockerInfo{
+.dashboard_lockers::-webkit-scrollbar{
+    width:5px;
+}
+
+.dashboard_lockers::-webkit-scrollbar-track{
+    background-color: #9b9b9b;
+}
+
+.dashboard_lockers::-webkit-scrollbar-thumb{
+    background-color: rgb(104, 103, 103);
+}
+
+.dashboard_detailget{
+    border: none;
+    background:none ;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.dashboard_lockerInfo{
     flex:2; 
     background-color: #C4C4C4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-height:100vh ;
 }
-.lockerInfo_top{
+.dashboard_lockerInfo_top{
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -113,7 +139,7 @@ display: flex;
     color:green;
 }
 
-.unlockButton{
+.dashboard_unlockButton{
     padding: 3px;
     border: none;
     background-color: rgb(90, 90, 90);
@@ -121,26 +147,26 @@ display: flex;
     border-radius:5px ;
 }
 
-.lockerInfo_top>h6{
+.dashboard_lockerInfo_top>h6{
     border-bottom: 1px solid black;
     font-weight: 500;
     font-size: 18px;
 }
 
-.lockertop{
+.dashboard_lockertop{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.lockerImg{
+.dashboard_lockerImg{
     width: 1.8rem;
     height: 1.8rem;
     color: green;
     margin: 20px;
 }
 
-.lockerInfo_details{
+.dashboard_lockerInfo_details{
    height: 70%;
    width: 12.9rem;
    background-color: white;
@@ -151,13 +177,13 @@ display: flex;
    align-items: center;
 }
 
-.profileImg{
+.dashboard_profileImg{
     width: 100px;
     height: 110px;
     margin-top: -55px;
     border-radius: 10px;
 }
-.lockerInfo_detailsdiv{
+.dashboard_lockerInfo_detailsdiv{
  height: 40px;
  width: 100%;
  margin: 40px 10px 10px 10px;
@@ -165,12 +191,12 @@ display: flex;
 
 }
 
-.lockerInfo_detailsdiv>h6{
+.dashboard_lockerInfo_detailsdiv>h6{
     font-weight: 600;
     margin-left: 10px;
 }
 
-.lockerInfo_detailsdiv>p{
+.dashboard_lockerInfo_detailsdiv>p{
     border-bottom: 1px solid black;
     width: 90%;
     margin-top: 25px;

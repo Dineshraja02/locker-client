@@ -4,8 +4,8 @@ import "./register.css";
 import validateInfo from './validateForm';
 import useRegisterForm from './useRegisterForm';
 
-const Register = () => {
-    const {handleChange,handleSubmit,errors,values}=useRegisterForm(validateInfo)
+const Register = (props) => {
+    const {handleChange,handleSubmit,errors,values}=useRegisterForm(validateInfo,props)
     return (
         <div className='register_page'>
                 <form className='register' onSubmit={handleSubmit}>
@@ -23,6 +23,7 @@ const Register = () => {
                     <label htmlFor='username' className='label_Icon'>
                     <Icon icon="ant-design:user-outlined" />  
                     </label>
+                    {errors.username && <p>{errors.username}</p>}
                 </div>
                 <div className='register_Input'>
                     <input
@@ -36,6 +37,7 @@ const Register = () => {
                     <label className='label_Icon'>
                     <Icon icon="carbon:email" />
                     </label>
+                    {errors.email && <p>{errors.email}</p>}
                 </div>
                 <div className='register_Input'>
                     <input
@@ -49,6 +51,7 @@ const Register = () => {
                     <label className='label_Icon'>
                     <Icon icon="bytesize:lock" />
                     </label>
+                    {errors.password && <p>{errors.password}</p>}
                 </div>
                 <div className='register_Input'>
                     <input
@@ -62,6 +65,7 @@ const Register = () => {
                     <label className='label_Icon'>
                     <Icon icon="bytesize:lock" />
                     </label>
+                    {errors.password2 && <p>{errors.password2}</p>}
                 </div>
                 <button type="submit"
                 className="register_Submit">Sign In</button>

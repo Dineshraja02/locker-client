@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes,Route } from "react-router-dom"
 import Register from "./pages/register/register"
 import Login from "./pages/login/login"
-import Dashboard from "./pages/dashboard.js/dashboard";
+import Dashboard from "./pages/dashboard/dashboard";
 import Reports from "./pages/reports/reports";
 import Userlist from "./pages/user-list/user-list";
 import Empprofile from "./pages/emp-profile/emp-profile";
@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path="/" element={<Login />} />
+     <Route path="/login" element={<Login />} />
      <Route path="/register" element={<Register />} />
      <Route path="/dashboard" element={<Dashboard />} />
      <Route path="/reports" element={<Reports />} />

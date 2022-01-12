@@ -1,23 +1,38 @@
-.dashboard{
+.empProfile{
     display: flex;
+    max-height: 100vh;
     }
-    .sidebar{
+    .empProfile_sidebar{
         flex:2.5;
     }
     
-    .lockers{
+    .empProfile_lockers{
         flex:7.5;
         background-color: #ECECEC;
+        overflow-y: scroll;
+        position: sticky
     }
     
-    .lockersContainer{
+    .empProfile_lockers::-webkit-scrollbar{
+        width:5px;
+    }
+    
+    .empProfile_lockers::-webkit-scrollbar-track{
+       background-color: #9b9b9b;
+    }
+    
+    .empProfile_lockers::-webkit-scrollbar-thumb{
+        background-color: rgb(104, 103, 103);
+    }
+    
+    .empProfile_lockersContainer{
         background-color: white;
         height: 95vh;
         margin:20px;
         border-radius: 15px;
     }
     
-    .lockershead{
+    .empProfile_lockershead{
         height:15%;
         display: flex;
         align-items: center;
@@ -25,21 +40,21 @@
         margin:25px;
     }
     
-     #lockershead{
+     #empProfile_lockershead{
         margin-left: 40px;
         margin-top: 30px;
         font-size: 25px;
         font-weight: 500;
     }
     
-    .search_Input{
+    .empProfile_search_Input{
         width: 100%;
         position: relative;
         justify-content: center;
         margin-left: 8%;
     }
     
-    .search_Inputfields{
+    .empProfile_search_Inputfields{
         margin-right: 40px;
         margin-top: 30px;
         border: none;
@@ -54,7 +69,7 @@
         position: relative;
     }
     
-    .search_Icon{  
+    .empProfile_search_Icon{  
         color: black;
         position: absolute;
         
@@ -65,7 +80,7 @@
         height: 1.3rem;
     }
     
-    .lockerInfo{
+    .empProfile_lockerInfo{
         flex:2; 
         background-color: #C4C4C4;
         display: flex;
@@ -73,7 +88,7 @@
         align-items: center;
         justify-content: center;
     }
-    .lockerInfo_top{
+    .empProfile_lockerInfo_top{
         height: 20%;
         display: flex;
         flex-direction: column;
@@ -83,29 +98,29 @@
         font-size: 20px;
     }
     
-    .lockerInfo_top>h6{
+    .empProfile_lockerInfo_top>h6{
         border-bottom: 1px solid black;
         font-weight: 500;
         font-size: 18px;
     }
     
-    .lockertop{
+    .empProfile_lockertop{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .lockerImg{
+    .empProfile_lockerImg{
         width: 1.8rem;
         height: 1.8rem;
         color: green;
         margin: 20px;
     }
     
-    .lockerInfo_details{
+    .empProfile_lockerInfo_details{
        height: 70%;
        width: 12.9rem;
-       background-color: F1F1F1;
+       background-color: #F1F1F1;
        border-radius: 10px;
        display: flex;
        flex-direction: column;
@@ -113,14 +128,14 @@
        align-items: center;
     }
     
-    .profileImg{
+    .empProfile_profileImg{
         width: 100px;
         height: 110px;
         margin-top: -55px;
         border-radius: 10px;
         margin-bottom: 20px;
     }
-    .lockerInfo_detailsdiv{
+    .empProfile_lockerInfo_detailsdiv{
      height: 40px;
      width: 100%;
      margin: 40px 10px 10px 10px;
@@ -128,56 +143,57 @@
     
     }
     
-    .lockerInfo_detailsdiv>h6{
+    .empProfile_lockerInfo_detailsdiv>h6{
         font-weight: 600;
         margin-left: 10px;
     }
     
-    .lockerInfo_detailsdiv>p{
+    .empProfile_lockerInfo_detailsdiv>p{
         border-bottom: 1px solid black;
         width: 90%;
         margin-top: 25px;
         margin-left: 10px;
     }
     
-    .userlist-Table{
+    .empProfile_Table{
         display: flex;
         align-items: center;
         justify-content: center;   
     }
     
-    .emi_Table{
+    .empProfile_emp_Table{
         width: 80%;
         margin: 20px;
     }
     
-    .table_Header{
+    .empProfile_table_Header{
         color: black;
         
     }
     
-    .table_Header >th{
+    .empProfile_table_Header >th{
         border:none
     }
     
-    .table-Content>th{
+    .empProfile_table-Content>th{
         border: 1px solid black;
     }
     
-    .reportsForm{
+    .empProfile_Form{
         display: flex;
         flex-direction: column;
     }
     
-    .reportsInput{
+    .empProfile_Input{
         margin-bottom:30px ;
         padding: 8px;
         outline: none;
         border: none;
         border-bottom: 1px solid black;
+        background-color: rgba(255, 255, 255, 0);
     }
     
-    .input_Button{
+    .empProfile_input_Button{
         padding: 10px;
         border: none;
         background-color: #303030 ;
@@ -185,6 +201,6 @@
         font-weight: bold;
     }
 
-    .reportsForm>p{
+    .empProfile_Form>p{
         margin: 10px 0;
     }

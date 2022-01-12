@@ -1,28 +1,29 @@
-.dashboard{
+.reports{
 display: flex;
+max-height: 100vh;
 }
-.sidebar{
+.reports_sidebar{
     flex:2.5;
 }
 
-.reportHeader{
+.reports_Header{
  width: 90%;
  height: 200px;
  margin: 30px;
 }
 
-.reportHeader>h3{
+.reports_Header>h3{
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.reportHeaderdiv{
+.reports_Headerdiv{
     display: flex;
     justify-content: space-between;
     margin: 20px 80px;
 } 
 
-.reportHeaderInput{
+.reports_HeaderInput{
     background-color: #6e6e6e;
     border: none;
     outline: none;
@@ -31,19 +32,33 @@ display: flex;
     border-radius: 3px;
 }
 
-.lockers{
+.reports_lockers{
     flex:7.5;
     background-color: #ECECEC;
+    overflow-y: scroll;
+    position: sticky
 }
 
-.lockersContainer{
+.reports_lockersContainer{
     background-color: white;
     height: 95vh;
     margin:20px;
     border-radius: 15px;
 }
 
-.lockershead{
+.reports_lockers::-webkit-scrollbar{
+    width:5px;
+}
+
+.reports_lockers::-webkit-scrollbar-track{
+    background-color: #9b9b9b;
+}
+
+.reports_lockers::-webkit-scrollbar-thumb{
+    background-color: rgb(104, 103, 103);
+}
+
+.reports_lockershead{
     height:15%;
     display: flex;
     align-items: center;
@@ -51,21 +66,21 @@ display: flex;
     margin:25px;
 }
 
- #lockershead{
+ #reports_lockershead{
     margin-left: 40px;
     margin-top: 30px;
     font-size: 25px;
     font-weight: 500;
 }
 
-.search_Input{
+.reports_search_Input{
     width: 100%;
     position: relative;
     justify-content: center;
     margin-left: 8%;
 }
 
-.search_Inputfields{
+.reports_search_Inputfields{
     margin-right: 40px;
     margin-top: 30px;
     border: none;
@@ -80,7 +95,7 @@ display: flex;
     position: relative;
 }
 
-.search_Icon{  
+.reports_search_Icon{  
     color: black;
     position: absolute;
     
@@ -92,7 +107,7 @@ display: flex;
 }
 
 
-.lockerInfo{
+.reports_lockerInfo{
     flex:2; 
     background-color: #C4C4C4;
     display: flex;
@@ -100,7 +115,7 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
-.lockerInfo_top{
+.reports_lockerInfo_top{
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -110,29 +125,29 @@ display: flex;
     font-size: 20px;
 }
 
-.lockerInfo_top>h6{
+.reports_lockerInfo_top>h6{
     border-bottom: 1px solid black;
     font-weight: 500;
     font-size: 18px;
 }
 
-.lockertop{
+.reports_lockertop{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.lockerImg{
+.reports_lockerImg{
     width: 1.8rem;
     height: 1.8rem;
     color: green;
     margin: 20px;
 }
 
-.lockerInfo_details{
+.reports_lockerInfo_details{
    height: 70%;
    width: 12.9rem;
-   background-color: F1F1F1;
+   background-color: #F1F1F1;
    border-radius: 10px;
    display: flex;
    flex-direction: column;
@@ -140,14 +155,14 @@ display: flex;
    align-items: center;
 }
 
-.profileImg{
+.reports_profileImg{
     width: 100px;
     height: 110px;
     margin-top: -55px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.lockerInfo_detailsdiv{
+.reports_lockerInfo_detailsdiv{
  height: 40px;
  width: 100%;
  margin: 40px 10px 10px 10px;
@@ -155,56 +170,57 @@ display: flex;
 
 }
 
-.lockerInfo_detailsdiv>h6{
+.reports_lockerInfo_detailsdiv>h6{
     font-weight: 600;
     margin-left: 10px;
 }
 
-.lockerInfo_detailsdiv>p{
+.reports_lockerInfo_detailsdiv>p{
     border-bottom: 1px solid black;
     width: 90%;
     margin-top: 25px;
     margin-left: 10px;
 }
 
-.userlist-Table{
+.reports_userlist-Table{
     display: flex;
     align-items: center;
     justify-content: center;   
 }
 
-.emi_Table{
+.reports_Table{
     width: 80%;
     margin: 20px;
 }
 
-.table_Header{
+.reports_table_Header{
     color: black;
     
 }
 
-.table_Header >th{
+.reports_table_Header >th{
     border:none
 }
 
-.table-Content>th{
+.reports_table-Content>th{
     border: 1px solid black;
 }
 
-.reportsForm{
+.reports_Form{
     display: flex;
     flex-direction: column;
 }
 
-.reportsInput{
+.reports_Input{
     margin-bottom:30px ;
     padding: 8px;
     outline: none;
     border: none;
     border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.input_Button{
+.reports_input_Button{
     padding: 10px;
     border: none;
     background-color: #303030 ;

@@ -4,15 +4,15 @@ import "./user-list.css";
 
 const Userlist = () => {
     return (
-        <div className='dashboard'>
-            <Sidebar className="sidebar" />
-            <div className='lockers'>
-                <div className="lockersContainer">
-                    <div className='lockershead'>
-                        <h3 id="lockershead">User List</h3>
-                        <div className='Search_Input'>
+        <div className='userlist'>
+            <Sidebar className="userlist_sidebar" />
+            <div className='userlist_lockers'>
+                <div className="userlist_lockersContainer">
+                    <div className='userlist_lockershead'>
+                        <h3 id="userlist_lockershead">User List</h3>
+                        <div className='userlist_Search_Input'>
                             <input
-                            className='search_Inputfields'
+                            className='userlist_search_Inputfields'
                             placeholder='Search'
                             name='search'
                             type="text"
@@ -21,9 +21,9 @@ const Userlist = () => {
                             </div>
                     </div>
                     <hr/>
-                    <div className='userlist-Table'>
-                    <table className="emi_Table">
-                    <tr className="table_Header">
+                    <div className='userlist_userlist-Table'>
+                    <table className="userlist_Table">
+                    <tr className="userlist_table_Header">
                     <th>Name</th>
                     <th>EmailId</th>
                     <th>Phone</th>
@@ -33,23 +33,23 @@ const Userlist = () => {
                     </div>
                 </div>
             </div>
-            <div className='lockerInfo'>
-                <div className='lockerInfo_top'>
+            <div className='userlist_lockerInfo'>
+                <div className='userlist_lockerInfo_top'>
                 <h6>Add User</h6>
                 
                 </div>
-                <div className="lockerInfo_details">
-                <img className = "profileImg" src="./assets/profile.png" alt=""></img>
-                  <form className='reportsForm'>
+                <div className="userlist_lockerInfo_details">
+                <img className = "userlist_profileImg" src="./assets/profile.png" alt=""></img>
+                  <form className='userlist_Form'>
                   <label>User name</label>
-                  <input type="text" className='reportsInput'></input>
+                  <input type="text" className='userlist_Input'></input>
                   <label>Password</label>
-                  <input type="password" className='reportsInput'></input>
+                  <input type="password" className='userlist_Input'></input>
                   <label>Confirm Password</label>
-                  <input type="password" className='reportsInput'></input>
+                  <input type="password" className='userlist_Input'></input>
                   <label>User Profile</label>
-                  <input type="type"className='reportsInput'></input>
-                  <button className='input_Button'>Enter Pass Code</button>
+                  <input type="type"className='userlist_Input'></input>
+                  <button className='userlist_input_Button'>Enter Pass Code</button>
                   </form>
                 </div>
             </div>
